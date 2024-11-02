@@ -4,7 +4,7 @@
 
 ## Description
 
-[Nest] Nest Js project.
+EASY HG : Backend part - Nest Js project.
 
 ## Project setup
 
@@ -27,8 +27,7 @@ $ pnpm start:dev
 
 ## Stay in touch
 
-- Author - [R.ROGGUI]
+- Project manager & Fullstack Dev - [R.ROGGUI]
+- Fullstack Dev - [Z.DAGHRIR]
 
 ## License
-
--- Ongoing
