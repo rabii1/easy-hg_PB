@@ -1,0 +1,61 @@
+{
+  /* General Editor Settings */
+  "editor.tabSize": 2, // Set tab width to 2 spaces
+  "editor.detectIndentation": false, // Ensures consistent indentation regardless of file content
+  "editor.formatOnSave": true, // Automatically formats code on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets Prettier as the default formatter
+  "files.eol": "\n", // Enforces LF line endings for consistency across environments
+  "files.trimTrailingWhitespace": true, // Removes extra spaces at the end of lines
+  "files.insertFinalNewline": true, // Ensures files end with a newline for POSIX compatibility
+
+  /* TypeScript and JavaScript Validation */
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative", // Prefer non-relative imports when possible
+  "typescript.preferences.quoteStyle": "double", // Use double quotes in auto-imports
+  "typescript.format.enable": false, // Disables built-in TypeScript formatter to use Prettier instead
+  "javascript.format.enable": false, // Disables built-in JavaScript formatter to use Prettier instead
+
+  /* ESLint Settings */
+  "eslint.format.enable": true, // Uses ESLint for formatting where possible
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.codeActionsOnSave.mode": "all", // Runs all ESLint fixers on save
+
+  /* Prettier Settings */
+  "prettier.singleQuote": false, // Enforces double quotes in Prettier
+  "prettier.trailingComma": "all", // Adds trailing commas where possible
+  "prettier.semi": true, // Enforces semicolons at the end of statements
+  "prettier.tabWidth": 2, // Sets tab width to 2 spaces
+  "prettier.printWidth": 80, // Wraps lines at 80 characters
+  "prettier.bracketSpacing": true, // Adds spaces between brackets in object literals
+  "prettier.arrowParens": "always", // Always include parentheses for arrow functions
+  "prettier.endOfLine": "lf", // Enforces LF line endings
+
+  /* NestJS Specific Paths */
+  "path-intellisense.mappings": {
+    // Path aliases for better import suggestions
+    "@app": "${workspaceFolder}/src/app",
+    "@modules": "${workspaceFolder}/src/modules",
+    "@config": "${workspaceFolder}/src/config",
+    "@utils": "${workspaceFolder}/src/utils"
+  },
+
+  /* File Watching */
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.git/**": true
+  },
+
+  /* Auto-Save Disabled */
+  "files.autoSave": "off"
+}

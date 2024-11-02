@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "lib": ["ES2021", "DOM"],
+    "strict": true,
+
+    /* Advanced Type Checking */
+    "strictNullChecks": true,                  // Already covered by strict mode
+    "strictPropertyInitialization": true,      // Ensures all class properties are initialized
+    "noImplicitAny": true,                     // No implicit `any` types allowed
+    "noImplicitReturns": true,                 // All functions must have explicit return values
+    "noFallthroughCasesInSwitch": true,        // No fall-through in switch cases
+    "noUnusedLocals": true,                    // Prevents declaring unused variables
+    "noUnusedParameters": true,                // Prevents declaring unused function parameters
+    "noImplicitThis": true,                    // Disallows `this` with implicit `any`
+    "noUncheckedIndexedAccess": true,          // Explicitly handle `undefined` in array or object accesses
+    "exactOptionalPropertyTypes": true,        // Distinguishes `optional` properties from those that may be `undefined`
+
+    /* Decorators */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* Module Resolution */
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@modules/*": ["src/modules/*"],
+      "@config/*": ["src/config/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+
+    /* Output Options */
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+
+    /* Source Maps */
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "inlineSources": true,
+
+    /* Import and JSON Handling */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,      // Allows default imports from modules with no default export
+
+    /* Clean Code Enforcement */
+    "forceConsistentCasingInFileNames": true,  // Case-sensitive file imports
+    "noPropertyAccessFromIndexSignature": true // Prevents using `object[key]` if `key` is not a defined property
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+}
